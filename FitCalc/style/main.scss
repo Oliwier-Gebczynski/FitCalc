@@ -321,6 +321,47 @@ body {
 
 @media only screen and (max-width: 800px) {
   .container {
+    .loader{
+
+      header{
+
+        h1{
+          font-size: 50px;
+        }
+        img{
+          width: 17.5%;
+        }
+      }
+    }
+
+    .mainPage{
+      grid-template-areas: "header header" ". ." "main main" "button ." ". .";
+      background-position: center;
+      header{
+        margin-top: 10%;
+
+        h1{
+          font-size: 35px;
+        }
+        img{
+          width: 14%;
+        }
+      }
+
+      main{
+
+        article{
+          margin-bottom: 15%;
+          h2{
+            font-size: 20px;
+          }
+          p{
+            font-size: 25px;
+          }
+        }
+      }
+    }
+
     .sex {
       flex-direction: column;
 
@@ -335,8 +376,27 @@ body {
       }
     }
 
-    .mainPage {
-      grid-template-areas: "header header" ". ." "main main" "button ." ". .";
+    .activeForm{
+      
+      main{
+
+        a{
+          width: 15%;
+          height: 15%;
+          margin: 5% 5% 0 0;
+        }
+
+        form{
+          .number{
+            width: 70%;
+
+            input{
+              font-size: 10px;
+            }
+
+          }
+        }
+      }
     }
   }
 }

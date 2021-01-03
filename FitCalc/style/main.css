@@ -410,6 +410,34 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
+  .container .loader header h1 {
+    font-size: 50px;
+  }
+  .container .loader header img {
+    width: 17.5%;
+  }
+  .container .mainPage {
+    grid-template-areas: "header header" ". ." "main main" "button ." ". .";
+    background-position: center;
+  }
+  .container .mainPage header {
+    margin-top: 10%;
+  }
+  .container .mainPage header h1 {
+    font-size: 35px;
+  }
+  .container .mainPage header img {
+    width: 14%;
+  }
+  .container .mainPage main article {
+    margin-bottom: 15%;
+  }
+  .container .mainPage main article h2 {
+    font-size: 20px;
+  }
+  .container .mainPage main article p {
+    font-size: 25px;
+  }
   .container .sex {
     flex-direction: column;
   }
@@ -421,8 +449,16 @@ body {
     height: 65%;
     width: 100%;
   }
-  .container .mainPage {
-    grid-template-areas: "header header" ". ." "main main" "button ." ". .";
+  .container .activeForm main a {
+    width: 15%;
+    height: 15%;
+    margin: 5% 5% 0 0;
+  }
+  .container .activeForm main form .number {
+    width: 70%;
+  }
+  .container .activeForm main form .number input {
+    font-size: 10px;
   }
 }
 
