@@ -449,16 +449,91 @@ body {
     height: 65%;
     width: 100%;
   }
+  .container .activeForm {
+    flex-direction: column;
+  }
+  .container .activeForm main {
+    width: 100%;
+    height: 50%;
+  }
   .container .activeForm main a {
-    width: 15%;
-    height: 15%;
+    position: absolute;
+    width: 12%;
+    height: 12%;
     margin: 5% 5% 0 0;
   }
+  .container .activeForm main form {
+    width: 100%;
+    height: 100%;
+    margin-top: 8%;
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows: 10% 20% 20% 20% 20% 10%;
+    grid-template-areas: ". . . ." ". number1 number2 ." ". number3 number4 ." ". activity activity ." ". numberSelect submit ." ". . . .";
+  }
   .container .activeForm main form .number {
-    width: 70%;
+    width: 75%;
+    padding: 3% 0 3% 0;
+    margin: 0 2% 0 2%;
+    grid-area: number;
+    align-self: center;
+    justify-self: center;
   }
   .container .activeForm main form .number input {
     font-size: 10px;
+  }
+  .container .activeForm main form #number1 {
+    grid-area: number1;
+  }
+  .container .activeForm main form #number2 {
+    grid-area: number2;
+  }
+  .container .activeForm main form #number3 {
+    grid-area: number3;
+  }
+  .container .activeForm main form #number4 {
+    grid-area: number4;
+  }
+  .container .activeForm main form .form-label {
+    grid-area: activity;
+    align-self: center;
+    justify-self: center;
+  }
+  .container .activeForm main form .numberSelect {
+    grid-area: numberSelect;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    margin-top: 17%;
+    font-size: 14px;
+  }
+  .container .activeForm main form .submit {
+    grid-area: submit;
+    align-self: center;
+    justify-self: center;
+    width: 75%;
+    margin-left: 10%;
+    padding: 5% 2% 5% 2%;
+    font-size: 14px;
+  }
+  .container .activeForm aside {
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+  }
+  .container .activeForm aside article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .activeForm aside article h3 {
+    font-size: 15px;
+    margin: 5%;
+  }
+  .container .activeForm aside article ul {
+    font-size: 10px;
+    padding: 0 5% 5% 5%;
   }
 }
 
