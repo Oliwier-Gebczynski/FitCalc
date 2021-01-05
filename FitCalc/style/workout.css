@@ -444,3 +444,69 @@ body {
 .container .ActivePress article ul li:first-child {
   margin-top: 2%;
 }
+
+@media only screen and (max-width: 800px) {
+  .container .menu {
+    grid-template-columns: repeat(2, 48%);
+    grid-template-rows: repeat(3, 31.7%);
+  }
+  .container .menu .info {
+    font-size: 15px;
+  }
+  .container .menu .row, .container .menu .press, .container .menu .pull, .container .menu .squat, .container .menu .deadlift {
+    font-size: 17px;
+  }
+  .container .ActivePress {
+    flex-direction: column;
+  }
+  .container .ActivePress .button_slide {
+    width: 45px;
+    height: 45px;
+  }
+  .container .ActivePress .next {
+    top: 25%;
+    left: 87%;
+  }
+  .container .ActivePress .prev {
+    top: 25%;
+    left: 2%;
+  }
+  .container .ActivePress .press_photo {
+    width: 70%;
+    height: 40%;
+    margin-top: 15%;
+  }
+  .container .ActivePress article {
+    width: 80%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .container .ActivePress article h3 {
+    grid-row: 1/2;
+    align-self: flex-end;
+    font-size: 15px;
+  }
+  .container .ActivePress article p {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    font-size: 10px;
+    font-weight: 200;
+  }
+  .container .ActivePress article ul {
+    font-size: 13px;
+    align-self: flex-start;
+  }
+  .container .ActivePress article ul li {
+    font-size: 10px;
+  }
+  .container .ActivePress article .pozycja_startowa {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .container .ActivePress article .prawidlowy_ruch {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
