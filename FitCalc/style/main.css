@@ -410,6 +410,9 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
+  body {
+    overflow: visible;
+  }
   .container .loader header h1 {
     font-size: 50px;
   }
@@ -535,6 +538,30 @@ body {
     font-size: 10px;
     padding: 0 5% 5% 5%;
   }
+  .container #results h2 {
+    display: none;
+  }
+  .container #results .results {
+    width: 100%;
+    height: 15vh;
+    padding: 0;
+    justify-content: center;
+  }
+  .container #results .results .results-left .title {
+    height: 6vh;
+    font-size: 20px;
+  }
+  .container #results .results .results-left .scale {
+    height: 30%;
+  }
+  .container #results .info {
+    width: 100%;
+    font-size: 12px;
+    display: none;
+  }
+  .container #results #what-next {
+    height: 30%;
+  }
 }
 
 /* results */
@@ -548,7 +575,7 @@ body {
 }
 
 #results h2 {
-  margin: 30px auto;
+  margin: 0px auto;
   color: #ca3e47;
 }
 
