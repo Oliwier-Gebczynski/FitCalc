@@ -377,6 +377,13 @@ body{
         .ActivePress{
             flex-direction: column;
 
+            .goBack{
+                width: 30px;
+                height: 20px;
+                left: 6%;
+                top: 4%;
+            }
+
             .button_slide{
                 width: 45px;
                 height: 45px;
@@ -403,38 +410,46 @@ body{
                 height: 50%;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(2,1fr);
+                grid-template-rows: 10% 25% 65%;
+                column-gap: 5%;
                 
 
                 h3{
                     grid-row: 1/2;
+                    grid-column: 1/3;
                     align-self: flex-end;
                     font-size: 15px;
+                    align-self: center;
+                    justify-self: center;
                 }
 
                 p{  
                     grid-row: 2/3;
-                    grid-column: 1/2;
+                    grid-column: 1/3;
                     font-size: 10px;
                     font-weight: 200;
+                    line-height: 1.2em;
+                    align-self: center;
+                    justify-self: center;
                 }
 
                 ul{
                     font-size: 13px;
                     align-self: flex-start;
+                    justify-self: center;
                     li{
                         font-size: 10px;
                     }
                 }
 
                 .pozycja_startowa{
-                    grid-column: 2/3;
-                    grid-row: 1/2;
+                    grid-column: 1/2;
+                    grid-row: 3/4;
                 }
 
                 .prawidlowy_ruch{
                     grid-column: 2/3;
-                    grid-row: 2/3;
+                    grid-row: 3/4;
                 }
             }
         }
